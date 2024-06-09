@@ -17,7 +17,7 @@ export const Login = (props) => {
         setError(''); // Clear previous errors
 
         try {
-            const response = await axios.post('http://34.224.98.64:3000/login/api/login', {
+            const response = await axios.post('http://54.167.80.40:3000/login/api/login', {
                 email,
                 password: pass
             });
