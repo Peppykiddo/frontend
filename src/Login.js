@@ -9,6 +9,7 @@ export const Login = (props) => {
     const [error, setError] = useState('');
 
     const navigate = useNavigate()
+    //http://34.229.139.79:3000/
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -16,7 +17,7 @@ export const Login = (props) => {
         setError(''); // Clear previous errors
 
         try {
-            const response = await axios.post('http://localhost:3000/login/api/login', {
+            const response = await axios.post('http://34.224.98.64:3000/login/api/login', {
                 email,
                 password: pass
             });

@@ -59,7 +59,7 @@ const EMD = () => {
     setError('');
 
     try {
-      const response = await axios.post('http://localhost:3000/user/emd', formattedData);
+      const response = await axios.post('http://34.224.98.64:3000/user/emd', formattedData);
       console.log('Response:', response.data);
       // alert('Data submitted successfully');
       setData({});
@@ -86,7 +86,7 @@ const EMD = () => {
 
   const handleViewAbstract = async () => {
     try {
-      const result = await axios.get('http://localhost:3000/user/getAbstractData');
+      const result = await axios.get('http://34.224.98.64:3000/user/getAbstractData');
       console.log("result = "+result.data)
       setAbstractData(result.data);
       setShowAbstract(true);

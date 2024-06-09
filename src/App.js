@@ -30,9 +30,6 @@ const [currentForm,setCurrentForm]= useState('login');
         <Route path="/Formtable" element={<Formtable />} />
         <Route path="/EMD" element={<EMD />} />
         <Route path="/login" element={<Login />} />
-
-        <Route path="*" Component={<h1>404 Not Found</h1>}  />
-
       </Routes>
 
     </div>
