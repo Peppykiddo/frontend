@@ -36,7 +36,7 @@ const Formtable = () => {
         fromDate: new Date(formData.fromDate).toISOString(),
         toDate: new Date(formData.toDate).toISOString()
       };
-      const response = await axios.post('http://52.201.254.65:3000/user/postData', formattedData); // Corrected API endpoint URL
+      const response = await axios.post('http://184.73.62.4:3000/user/postData', formattedData); // Corrected API endpoint URL
       console.log('Response:', response.data);
       setSubmittedData(formattedData);
       setShowResult(true);
